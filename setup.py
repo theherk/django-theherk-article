@@ -1,19 +1,18 @@
 import os
 from setuptools import setup
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
-# allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
     name='django-theherk-article',
-    version='1.2',
+    version='1.3',
     packages=['article'],
     include_package_data=True,
     license='see file LICENSE',
     description='django CMS plugin to post a simple article',
-    long_description=README,
+    long_description=read('README.md'),
     url='https://github.com/theherk/django-theherk-article',
     author='Adam Sherwood',
     author_email='theherk@gmail.com',
