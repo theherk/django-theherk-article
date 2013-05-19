@@ -9,12 +9,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-theherk-article',
     version='1.1',
-    packages=['cmsplugin_article'],
+    packages=['article'],
     include_package_data=True,
     license='see file LICENSE',
     description='django CMS plugin to post a simple article',
     long_description=README,
-    url='github',
+    url='https://github.com/theherk/django-theherk-article',
     author='Adam Sherwood',
     author_email='theherk@gmail.com',
     classifiers=[
