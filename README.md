@@ -17,13 +17,13 @@ The body can use html, but this, too, can be changed in your template.
 Usage
 -----
 
-1. Add "polls" to your INSTALLED_APPS
+1. Add "article" to your INSTALLED_APPS
 
         INSTALLED_APPS = (
             ...
-            'cmsplugin_article',
+            'article',
         )
 
-2. Run `python manage.py migrate cmsplugin_article`.
+2. Run `python manage.py migrate article`.
 
    Alternately, you could `syncdb` and `migrate --fake`
