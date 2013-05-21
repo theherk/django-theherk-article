@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def read(fname):
@@ -7,8 +7,8 @@ def read(fname):
 
 setup(
     name='django-theherk-article',
-    version='1.3',
-    packages=['article'],
+    version='1.4',
+    packages=find_packages(),
     include_package_data=True,
     license='see file LICENSE',
     description='django CMS plugin to post a simple article',
