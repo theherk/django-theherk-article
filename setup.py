@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name='django-theherk-article',
-    version='1.4',
+    version='1.5',
     packages=find_packages(),
     include_package_data=True,
     license='see file LICENSE',

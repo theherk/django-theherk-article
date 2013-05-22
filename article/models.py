@@ -10,7 +10,11 @@ class Article(CMSPlugin):
     title = models.CharField(max_length=48)
     slug = models.SlugField(editable=False)
     description = models.CharField(max_length=64, blank=True)
-    body = models.TextField(help_text='Must be html. Use text plugin if this is a problem.')
+    body = models.TextField(
+        help_text='Must be html. Use text plugin if this is a problem.',
+        blank=True,
+        null=True
+    )
 
     """
     Override the save method to auto-slug the title.
